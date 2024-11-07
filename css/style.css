@@ -1,0 +1,122 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Space mono;
+}
+
+.navbar {
+  background-color: #bf6d1a;
+  padding: 0% 4%;
+}
+.navbar .navbar-brand img {
+  width: 100px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  color: white;
+}
+
+.hero-container {
+  padding: 4%;
+  height: 70vh;
+  background-image: url(../img/bigbrew-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.hero-container .hero-child {
+  width: 400px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.products-container {
+  padding: 4%;
+}
+.products-container .products-body {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.products-container .products-body .card {
+  padding: 10px;
+  width: 400px;
+}
+.products-container .products-body .card .showcase {
+  width: 400px;
+  height: 250px;
+  aspect-ratio: 2/2;
+}
+.products-container .products-body .card .card-body {
+  font-size: 0.9rem;
+}
+.products-container .products-body .card .card-body .btn {
+  background-color: #bf6d1a;
+  color: white;
+}
+.products-container .products-body .card .card-body .btn:hover {
+  background-color: #a25d19;
+}
+
+.about-container {
+  padding: 4%;
+  background-color: #bf6d1a;
+}
+.about-container .about-description {
+  flex: 1;
+}
+.about-container .about-video {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-container .about-video .video {
+  border-radius: 10px;
+  width: 90%;
+}
+
+.question-container {
+  padding: 4%;
+}
+.question-container .question-group {
+  background-color: #ca7e23;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+.question-container .answer {
+  background-color: #e7b482;
+  border-radius: 10px;
+}
+
+.footer-container {
+  padding: 4%;
+  background-color: #a25d19;
+}
+.footer-container a {
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .navbar-normal {
+    display: none;
+  }
+}
+@media (max-width: 1414px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .about-container .about-video {
+    order: 1;
+  }
+  .about-container .about-description {
+    order: 2;
+    text-align: center;
+    margin-top: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

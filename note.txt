@@ -1,0 +1,2 @@
+backgroundColor = #ca7e23;
+navBar = #20170b;

@@ -1,0 +1,152 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Space mono;
+}
+
+.navbar {
+    background-color: #bf6d1a;
+    padding: 0% 4%;
+
+    .navbar-brand {
+        
+        img {
+            width: 100px;
+        }
+    }
+    
+
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: white;
+            }
+        }
+    }
+
+}
+
+.hero-container {
+    padding:4%;
+
+    height: 70vh;
+    background-image: url(../img/bigbrew-hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .hero-child {
+        width: 400px;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+}
+
+.products-container {
+    padding:4%;
+
+    .products-body {
+
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        .card {
+            padding: 10px;
+            width: 400px;
+            
+            .showcase {
+                width: 400px;
+                height: 250px;
+                aspect-ratio: 2/2;
+            }
+
+            .card-body {
+                font-size: .9rem;
+                .btn {
+                    background-color: #bf6d1a;
+                    color: white;
+                }
+                .btn:hover {
+                    background-color:#a25d19;
+                }
+            }
+        }
+    }
+}
+
+.about-container {
+    padding: 4%;
+    background-color: #bf6d1a;
+
+    .about-description {
+        flex: 1;
+    }
+
+    .about-video {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .video {
+            border-radius: 10px;
+            width: 90%;
+        }
+    }
+}
+
+.question-container {
+    padding: 4%;
+
+    .question-group {
+        background-color: #ca7e23;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+    }
+    .answer {
+        background-color: #e7b482;
+        border-radius: 10px;
+    }
+}
+
+.footer-container {
+    padding: 4%;
+    background-color: #a25d19;
+
+    a {
+        color: white;
+        font-weight: bold;
+    }
+
+    
+}
+
+
+@media (max-width: 767px) {
+    .navbar-normal {
+        display: none;
+    }
+}
+
+@media (max-width: 1414px) {
+    .about-container {
+        flex-direction: column;
+
+        .about-video {
+            order: 1;
+        }
+
+        .about-description {
+            order: 2;
+            text-align: center;
+            margin-top: 10px;
+        
+        }
+    }
+}
